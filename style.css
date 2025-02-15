@@ -1,0 +1,758 @@
+/* GENEL SIFIRLAMA ve FONT AYARI */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #000; /* Arka plan siyah */
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* ANA CONTAINER (Üst kısım) */
+  .container {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 80%;
+    max-width: 600px;
+  }
+
+  
+  
+  .container p {
+    font-size: 0.90rem;
+    margin-bottom: 0.5rem;
+    font-family:  'Lexend Exa', sans-serif;
+    color: #B0B0B0;
+  }
+  
+  .container h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-family:  'Lexend Exa', sans-serif;
+  }
+  
+  .container h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-family:  'Lexend Exa', sans-serif;
+    color: #B0B0B0;
+  }
+  
+  /* SOSYAL MEDYA İKONLARI */
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 2.6rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .icon-box {
+    
+    width: 60px;
+    height: 60px;
+    border: 1px solid #B0B0B0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .icon-box:hover {
+    background-color: #1e1e1e;
+  }
+  
+  .icon-box i {
+    font-size: 1.5rem;
+  }
+  
+  /* BUTONLAR */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    
+  }
+  
+  .btn {
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 0.8rem 1.4rem;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    font-family:  'Lexend Exa', sans-serif;
+    
+  }
+  
+  .btn-cv {
+    background-color: #60946A;
+    color: #fff;
+    font-size: 12px;
+    
+    
+  }
+  
+  .btn-cv:hover {
+    background-color: #4cae4c;
+  }
+  
+  .btn-contact {
+    color: #B0B0B0;
+    background-color: transparent;
+    border: 1px solid #B0B0B0;
+    font-size: 12px;
+    
+
+  }
+  
+  .btn-contact:hover {
+    background-color: #B0B0B0;
+    color: #000;
+  }
+  
+  
+  /* ABOUT ME BÖLÜMÜ */
+  .about-me {
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+    margin-bottom: 5rem;
+  }
+  
+  .about-me h2 {
+    color: #60946A; /* About Me başlığına yeşil */
+    margin-bottom: 1.5rem;
+    font-family:  'Lexend Exa', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  .about-me p {
+    
+    color: #B0B0B0; /* About Me başlığına yeşil */
+    margin-bottom: 1.5rem;
+    font-family:  'Lexend Exa', sans-serif;
+    font-size: 0.80rem;
+    max-width: max-content;
+    text-align:justify;    
+  }
+  
+  .profile-photo {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  
+  .about-me h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-family:  'Lexend Exa', sans-serif;
+  }
+
+  
+  
+  /* BADGES KISMI (Student, Algorithm, 17 Project) */
+  .info-badges {
+    display: flex;
+    justify-content: center;
+    gap: 2.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .badge {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #B0B0B0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    color: #FFFFFF;
+    padding: 5px;
+  }
+  
+  .badge:hover {
+    background-color: #1e1e1e;
+  }
+  
+  .badge i {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    color: #60946A;
+  }
+  
+  .badge span {
+    font-size:10px;
+    color: #FFFFFF;
+    font-family:  'Lexend Exa', sans-serif;
+    font-weight: 200;
+  }
+  
+  /* ABOUT TEXT */
+  .about-text {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.4;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  
+  /*burası boş kalacak */
+  .skills {
+    width: 80%;
+    max-width: 600px;
+    margin: 2rem auto 3rem auto;
+    text-align: center;
+  }
+  
+  .skills h2 {
+    font-size: 20px;
+    color: #60946A; /* Başlık rengi (yeşil) */
+    margin-bottom: 2rem;
+    font-family:  'Lexend Exa', sans-serif;
+    font-weight: 300;
+  }
+  
+  .skills-container {
+    display: grid;
+    gap: 2rem;
+    /* Masaüstü (geniş ekran) görünüm için 2 sütun */
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px; /* İsterseniz genişliği ayarlayıp ortalamak için */
+    margin: 0 auto;   /* Ortalamak isterseniz */
+  }
+  
+
+  
+  /* HER BİR KUTU (skill-box) */
+  .skill-box {
+    border: 1px solid #B0B0B0;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: left; /* İç metinleri soldan hizalamak isterseniz */
+    transition: 0.3s ease;
+  }
+  
+  .skill-box:hover {
+    background-color: #1e1e1e;
+  }
+  
+  .skill-box h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 300;
+    
+    
+  }
+  
+  /* Liste yapısı */
+  .skill-box ul {
+    list-style-type: none; /* Varsayılan liste işaretlerini kaldırıyoruz */
+    padding-left: 0;
+  }
+
+  .skill-box h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #fff;
+    font-family:  'Lexend Exa', sans-serif;
+  }
+  
+  .skill-box ul li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    color: #B0B0B0; /* Metin rengi bu hex kodda olacak */
+    font-size: 0.8rem;
+  }
+  
+  /* Her madde başına yeşil bir nokta eklemek için */
+  .skill-box ul li::before {
+    content: "•";
+    color: #60946A; /* Nokta rengi yeşil */
+    margin-right: 0.6rem;
+  }
+
+
+
+
+
+/*Language Bölümü*/
+.languages-section {
+  width: 80%;
+  max-width: 700px; /* Dilerseniz ayarlayın */
+  text-align: center; /* Metni sola hizalamak */
+  margin-bottom: 3rem;
+}
+
+.languages-section h2 {
+  font-size: 1.4rem;
+  color: #60946A;
+  margin-bottom: 3rem;
+  font-family:  'Lexend Exa', sans-serif;
+  font-weight: 300;
+}
+
+.languages-list {
+  list-style: none; /* Varsayılan nokta vb. kaldırma */
+  padding: 0;
+  margin: 0;
+}
+
+/* Her madde (Turkish + Native vb.) */
+.languages-list li {
+  display: flex; /* İki metni aynı satırda tutmak için */
+  align-items: center;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  position: relative; /* ::before kullanacaksak konumlama için */
+}
+
+/* Yeşil nokta eklemek için */
+.languages-list li::before {
+  content: "•";
+  color: #60946A;
+  margin-right: 0.8rem;
+  font-size: 1.4rem; /* Nokta boyutu */
+  /* Noktanın dikey hizalaması için isterseniz line-height, position ayarları yapabilirsiniz */
+}
+
+.language-name {
+  margin-right: 0.6rem; /* Dil adıyla italik metin arasında boşluk */
+  color: #fff;          /* Dil adı rengi */
+  font-family:  'Lexend Exa', sans-serif;
+  font-weight: 200;
+}
+
+.languages-list li i {
+  font-style: italic;   /* Italik görünüm */
+  color: #B0B0B0;          /* Seviyenin rengi */
+  /* Dilerseniz font-size ve diğer özellikleri de ayarlayabilirsiniz. */
+}
+
+
+
+/* Progress Skills Bölümünün Ana Kapsayıcısı */
+.progress-skills {
+  width: 80%;
+  max-width: 700px; /* İsteğe göre genişlik limiti */
+  margin: 2rem auto; /* Ortalamak için otomatik yan boşluk */
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.progress-skills h2{
+  margin-bottom: 3rem;
+  font-weight: 300;
+  color: #60946A;
+  font-family:  'Lexend Exa', sans-serif;
+  font-size: 1.4rem;
+}
+
+/* Her bir satırda 2 beceriyi yan yana göstermek */
+.skills-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;      /* İki kutu arası boşluk */
+  margin-bottom: 1.5rem; /* Satırlar arasında dikey boşluk */
+}
+
+/* Tek beceri bloğu */
+.skill {
+  flex: 1;        /* Kalan alanı eşit paylaştır */
+}
+
+/* Beceri adı ve yüzdeyi aynı satırda göstermek */
+.skill p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-weight: 180;
+  font-family:  'Lexend Exa', sans-serif;
+
+}
+
+.skill p span {
+  color: #B0B0B0;    /* Yüzde değeri rengi */
+  font-size: 0.80rem;
+  font-family:  'Lexend Exa', sans-serif;
+}
+
+/* Gri arka planlı ilerleme çubuğu boş kısmı */
+.progress-bg {
+  background-color: #222; /* Koyu gri */
+  height: 6px;            /* Çubuğun kalınlığı */
+  border-radius: 3px;     /* Köşeleri yuvarla */
+  position: relative;
+  overflow: hidden;       /* Taşmaları gizle (yuvarlak kenarlarda lazım olabilir) */
+}
+
+/* Yeşil doluluk kısmı */
+.progress-fill {
+  background-color: #60946A; /* Yeşil renk */
+  height: 100%;
+  width: 0%;
+  border-radius: 3px;
+  transition: width 0.4s ease-in-out;
+  /* width inline-style'da ayarlanıyor (HTML'de style="width: xx%;") */
+}
+
+
+
+/* FIELD OF INTERESTS BÖLÜMÜ */
+.interests {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  text-align: left; /* Başlıklar ve kutucukları sola yaslıyoruz */
+  margin-top: 1rem;
+}
+
+.interests h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  color: #60946A; /* Yeşil renk */
+  font-weight: 300;
+  font-family:  'Lexend Exa', sans-serif;
+
+}
+
+.interest {
+  margin-bottom: 2rem;
+}
+
+.interest h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 200;
+  font-family:  'Lexend Exa', sans-serif;
+
+}
+
+.interest-box {
+  border: 1px solid #B0B0B0;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  transition: 0.3s;
+}
+
+.interest-box:hover {
+  background-color: #1e1e1e;
+}
+
+.interest-box i {
+  font-size: 1.5rem;
+  color: #60946A; /* İkonu yeşile boyadık */
+}
+
+.interest-box p {
+  margin: 0;
+  color: #B0B0B0;
+  line-height: 1.5;
+  font-size: 0.80rem;
+  font-family:  'Lexend Exa', sans-serif;
+
+}
+
+
+
+/* Proje Bölümü */
+.projects-section {
+  width: 80%;
+  max-width: 700px;
+  margin: 2rem auto;
+  margin-top: 3rem;
+}
+
+.projects-section h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #60946A;      /* Projects başlığı #60946A */
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-family:  'Lexend Exa', sans-serif;
+
+}
+
+/* ALT BAŞLIKLAR (Algorithm, Android, Database vb.) */
+.category-title {
+  font-size: 1rem;
+  color: #FFFFFF;          /* Kategori başlıklarını beyaz tuttuk */
+  margin: 1.5rem 0 1rem 0;
+  font-family:  'Lexend Exa', sans-serif;
+  font-weight: 200;
+}
+
+/* KUTU YAPISI */
+.project-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #B0B0B0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s;
+}
+
+.project-box:hover {
+  background-color: #1e1e1e; /* Hover efekti */
+}
+
+/* İKON KISMI */
+.project-icon {
+  font-size: 1.5rem;
+  color: #60946A; /* İkon rengi #60946A */
+  margin-right: 1rem;
+}
+
+/* KUTU YAZISI */
+.project-text {
+  color: #B0B0B0; /* Kutucuk içi yazılar #B0B0B0 */
+  font-size: 0.80rem;
+  font-family:  'Lexend Exa', sans-serif;
+
+}
+
+
+/*Contact Bölümü*/
+.contact-section {
+  width: 80%;
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center; /* Başlığı ortaya almak */
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.contact-section h2 {
+  font-size: 1.4rem;
+  color: #60946A; /* "Contact Me" başlığı yeşil */
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-family:  'Lexend Exa', sans-serif;
+
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #B0B0B0;      /* Kartın dış çerçevesi */
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  max-height: 4.40rem;
+  transition: background-color 0.3s;
+}
+
+.contact-card:hover {
+  background-color: #1e1e1e;   /* Hover efekti */
+}
+
+/* Artık ikonun kendi çerçevesi yok */
+.contact-icon {
+  width: 40px;        /* İkon alanı (isteğe göre) */
+  height: 40px;       /* Gerekirse kaldırabilirsiniz */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  /* border, border-radius yok */
+}
+
+.contact-icon i {
+  font-size: 1.5rem;
+  color: #60946A;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info h3 {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-family:  'Lexend Exa', sans-serif;
+  font-weight: 200;
+
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 0.80rem;
+  color: #B0B0B0;
+  font-family:  'Lexend Exa', sans-serif;
+
+}
+
+
+/* Sitenin alt banner'ı */
+.footer-banner {
+  background-color: #60946A; /* Arka plan rengi */
+  text-align: center;        /* Metni ortala */
+  padding: 1rem;            /* Dikey-yatay boşluk (çok büyük olmasın) */
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-banner p {
+  color: #FFFFFF  ;  /* Metnin rengi */
+  margin: 0;       /* Varsayılan boşlukları kaldır */
+  font-size: 1rem; /* Dilerseniz büyütebilirsiniz */
+  font-family:  'Lexend Exa', sans-serif;
+  font-weight: 200;
+}
+
+
+
+
+
+
+
+  
+  @media (min-width: 768px) {
+    /* Üst yazılar: "Hello, I am", Tarkan, Junior Developer */
+    .container p {
+      font-size: 2rem;    /* Biraz daha büyük */
+      margin-bottom: 1rem;  /* Aralarına biraz daha boşluk */
+    }
+  
+    .container h1 {
+      font-size: 6rem;      /* Başlık daha büyük görünsün */
+      margin-bottom: 0.5rem;
+    }
+  
+    .container h2 {
+      font-size: 1.8rem;    /* Alt başlık da büyüsün */
+      margin-bottom: 2rem;  /* Aşağıya fazladan boşluk */
+    }
+  
+    /* Sosyal medya ikonları */
+    .icons {
+      gap: 3rem;            /* İkonlar arası boşluk artsın */
+      margin-bottom: 3rem;  /* Alt tarafta daha çok boşluk */
+    }
+  
+    .icon-box {
+      width: 60px;          /* İkon kutuları büyüsün */
+      height: 60px;
+    }
+  
+    .icon-box i {
+      font-size: 1.8rem;    /* İkonun kendisi de büyüsün */
+    }
+  
+    /* Butonlar */
+    .buttons {
+      gap: 5rem;            /* Butonlar birbirinden daha ayrık olsun */
+      margin-bottom: 3rem;  /* Alt tarafında daha fazla boşluk */
+    }
+  
+    .btn {
+      padding: 1rem 2rem;   /* Butonların iç boşluğunu artır */
+      font-size: 1.1rem;    /* Yazı biraz daha büyük görünsün */
+    }
+
+     /* BAŞLIK: "About Me" */
+    .about-me h2 {
+      font-size: 2rem;   /* Daha büyük */
+      margin-bottom: 2rem; /* Alt boşluğu arttır */
+    }
+
+    /* FOTOĞRAF BÜYÜTME */
+    .profile-photo {
+      max-width: 400px;    /* 300 -> 400 yaparak fotoğrafı büyütüyoruz */
+      margin-bottom: 2rem; 
+    }
+
+    /* "Tarkan Mecit Yıldız" yazısı */
+    .about-me h3 {
+      font-size: 1.5rem;   /* Biraz daha büyük */
+      margin-bottom: 1.5rem;
+    }
+
+    /* BADGELER */
+    .info-badges {
+      gap: 3rem;           /* Kutucuklar arası boşluğu daha da arttır */
+      margin-bottom: 2rem; /* Altında daha fazla boşluk */
+    }
+
+    .badge {
+      width: 70px;         /* 60 -> 70 piksel yapıyoruz */
+      height: 70px;
+      font-size: 1rem;     /* İç yazı biraz daha büyük olsun isterseniz */
+    }
+
+    /* ALTTAKİ AÇIKLAMA */
+    .about-me p {
+      font-size: 1rem;
+       
+    }
+    .about-me h3 {
+      font-size: 2rem; /* Masaüstünde daha büyük */
+    }
+    .languages-section h2 {
+      font-size: 2rem;
+    }
+
+    .interests h2 {
+      text-align: center;
+      margin-bottom: 3rem;
+      font-size: 2rem;
+      color: #60946A; /* Yeşil renk */
+      font-weight: 300;
+      font-family:  'Lexend Exa', sans-serif;
+    
+    }
+
+    .progress-skills h2{
+     
+      font-size: 2rem;
+    }
+
+    .contact-section h2 {
+      font-size: 2rem;
+      
+    
+    }
+
+    .projects-section h2 {
+   
+      font-size: 2rem;
+
+    
+    }
+  
+  }
+
+  
